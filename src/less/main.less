@@ -1,0 +1,104 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+
+@bg: #fafafa;
+@base: #199ad6;
+@black: #655;
+@white: #fff;
+
+#root {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#widget {
+  background-color: @base;
+  border: 1px solid @base;
+  border-radius: 6px;
+}
+
+a {
+  color: @base;
+}
+
+.pend {
+  width: 1060px;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 44px;
+  color: @black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.credits-author {
+  font-size: 18px;
+  line-height: 26px;
+  color: @black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header {
+  li {
+    display: inline-block;
+    cursor: pointer;
+    color: @white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+  }
+
+  .activate {
+    color: lighten(@base, 15%);
+  }
+}
+
+main {
+  h1 {
+    font-size: 32px;
+  }
+
+  background-color: @bg;
+  color: @black;
+  padding: 20px;
+
+  .logo-credits {
+    font-size: 16px;
+    line-height: 24px;
+
+    a {
+      color: @black;
+    }
+  }
+}
+
+section {
+  figure {
+    margin: 10px 0;
+  }
+
+  i {
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+  }
+}
+
+footer {
+  text-align: right;
+
+  p {
+    color: @white;
+    font-size: 16px;
+    line-height: normal;
+    padding: 5px 20px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .pend {
+    width: 100%;
+  }
+}

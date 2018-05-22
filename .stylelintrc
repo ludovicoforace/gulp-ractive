@@ -1,0 +1,13 @@
+"stylelint": {
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "font-family-no-duplicate-names": [
+      true,
+      {
+        "ignoreFontFamilyNames": [
+          "monospace"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "gulp-ractive",
+  "version": "0.0.1",
+  "homepage": "https://",
+  "private": true,
+  "description": "Gulp-like boilerplate for Ractive.js",
+  "keywords": [
+    "ractive",
+    "starter",
+    "boilerplate",
+    "ractive.js"
+  ],
+  "main": "main.js",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.24.3",
+    "browserify": "^14.4.0",
+    "del": "^3.0.0",
+    "eslint": "^4.1.1",
+    "gh-pages": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-less": "^3.3.2",
+    "gulp-uglify": "^3.0.0",
+    "ractiveify": "^1.5.6",
+    "run-sequence": "^2.0.0",
+    "stylelint": "^7.12.0",
+    "stylelint-config-standard": "^16.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.6.3",
+    "ractive": "~0.7.3",
+    "sash-layout": "^1.2.13"
+  },
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  }
+}

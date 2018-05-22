@@ -1,0 +1,26 @@
+<div class="pend">
+  <h1 class="title">This is a project starter sample for <a target="_blank" href="https://ractive.js.org/">Ractive.js</a></h1>
+  <div id="widget">
+    <header>
+      <ul>
+        {{#head:i}}
+        <li on-click='active:{{i}}' class='{{ i === activate ? "activate" : "" }}'>{{this}}</li>
+        {{/head}}
+      </ul>
+    </header>
+
+    <main>
+      {{#if activate === 0}}
+      <Fish></Fish>
+      {{/if}} 
+      {{#if activate === 1}}
+      <Meat></Meat>
+      {{/if}}
+    </main>
+
+    <footer>
+      <p>Fish / Meat Sample</p>
+    </footer>
+  </div>
+  <p class="credits-author">{{year}}</p>
+</div>
